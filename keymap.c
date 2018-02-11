@@ -1,19 +1,24 @@
+/*
+Author: Brynn Mountain
+Last Update: 2018.02.11
+*/
+
 #include "planck.h"
 #include "action_layer.h"
 
 extern keymap_config_t keymap_config;
 
 enum planck_layers {
-  _QWERTY,
-  _LOWER,
-  _RAISE,
-  _ADJUST
+    _QWERTY,
+    _LOWER,
+    _RAISE,
+    _ADJUST
 };
 
 enum planck_keycodes {
-  QWERTY = SAFE_RANGE,
-  LOWER,
-  RAISE,
+    QWERTY = SAFE_RANGE,
+    LOWER,
+    RAISE,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
